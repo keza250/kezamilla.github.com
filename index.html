@@ -1,44 +1,46 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-   <link rel="stylesheet" href="styles/main.css" >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetCare Manager</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   
-   <div class="container">
-         <div class="row">
-   
-         <div class="col-lg-2">
-          
+    <header>
+        <h1>Welcome to PetCare Manager</h1>
+    </header>
 
-      </div>
+    <section id="doctorProfile">
+        <h2>Doctor's Profile</h2>
+        <p>Name: Keza Millajoie Appoline</p>
+        <p>Specialization: Veterinary Medicine</p>
+        <p>Experience: 10 years in treating cats and dogs</p>
+        <p>Contact: dr.alex.johnson@example.com</p>
+    </section>
 
-   <div class="col-lg-6">
-   <p>About me</p> 
-               <p>kmilla, A1</p>
-                <p> Perpetual coffee enthusiast and chronic overthinker with a surprisingly 
-                            good track record of turning half-baked ideas into actual things. 
-                            I spend my time exploring new places, 
-                            getting lost in rabbit holes of obscure knowledge, 
-                            and perfecting my ability to laugh at my own jokes before anyone else does</p>
-             <li> Position: Communication & public relation</li>
-               <li> Location: Kigali - Rwanda</li>
-               <li>Marital Status: Single </li> 
-         
-      </div>
-      <div class="col-lg-4">
-   
-         <img src="images/green.jpg" alt="My Image" width="250px" height="260px">
+    <section id="about">
+        <h2>About Me</h2>
+        <textarea id="aboutMe" rows="4" placeholder="Tell us about yourself..."></textarea>
+    </section>
 
-       </div>  
-      </div>
-      </div>
-<p> Welocme to My Portifolio</p>
+    <section id="appointments">
+        <h2>Schedule an Appointment</h2>
+        <form id="appointmentForm">
+            <input type="text" id="petName" placeholder="Pet Name" required>
+            <input type="text" id="appointmentDate" placeholder="Appointment Date (YYYY-MM-DD)" required>
+            <button type="submit">Schedule Appointment</button>
+        </form>
+        <div id="appointmentList"></div>
+    </section>
 
-<ol>   
- 
- </ul>
- <li> Projects </li>
-</ol>
-<ol>
+    <section id="healthRecords">
+        <h2>Health Records</h2>
+        <textarea id="healthRecordsInput" rows="4" placeholder="Enter health records..."></textarea>
+        <button id="saveRecords">Save Records</button>
+        <div id="recordConfirmation"></div>
+    </section>
 
-</ol>
+    <script src="script.js"></script>
+</body>
+</html>
